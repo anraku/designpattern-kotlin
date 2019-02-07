@@ -1,5 +1,5 @@
 package aggregate
 
-interface Aggregate {
-  fun iterator(): Iterator<Any>
+interface Aggregate<out T> {
+  fun iterator(): T
 }

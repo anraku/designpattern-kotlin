@@ -2,14 +2,14 @@ package book
 
 import iterator.*
 
-class BookShelfIterator(bs: BookShelf) : Iterator<Any> {
+class BookShelfIterator(bs: BookShelf) : Iterator<Book?> {
   var bookshelf = bs
   var index = 0
 
-  override fun next(): Any {
+  override fun next(): Book? {
     var b = bookshelf.getBookAt(index)
     index++
-    return b as Any
+    return b
   }
 
   override fun hasNext(): Boolean {

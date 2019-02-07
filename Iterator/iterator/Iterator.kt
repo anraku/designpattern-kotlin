@@ -1,6 +1,6 @@
 package iterator
 
-interface Iterator {
+interface Iterator<out T> {
   fun hasNext(): Boolean
-  fun next(): Any
+  fun next(): T
 }

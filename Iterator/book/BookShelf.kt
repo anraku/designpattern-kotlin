@@ -1,10 +1,9 @@
 package book
 
-import iterator.*
 import aggregate.*
 
 
-class BookShelf(maxsize: Int) : Aggregate {
+class BookShelf(maxsize: Int) : Aggregate<BookShelfIterator> {
   var books: Array<Book?> = arrayOfNulls(maxsize)
   var last = 0
 
@@ -20,7 +19,7 @@ class BookShelf(maxsize: Int) : Aggregate {
   fun getLength(): Int {
     return last
   }
-  
+
   override fun iterator(): BookShelfIterator {
     return BookShelfIterator(this)
   }
