@@ -1,5 +1,5 @@
 fun main() {
   val d = CharDisplay("hello")
   d.display()
-  // d.print() //←アクセスエラーになる
+  // d.print() //←スーパークラスのprotected指定子によってアクセスエラーになる
 }
