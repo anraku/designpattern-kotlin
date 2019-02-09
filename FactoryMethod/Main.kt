@@ -9,6 +9,6 @@ fun main(){
   val card2 = factory.create("user2")
   val card3 = factory.create("user3")
   card1.use()
-  card1.use()
-  card1.use()
+  card2.use()
+  card3.use()
 }
