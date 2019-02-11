@@ -1,4 +1,4 @@
-class TextBuilder : Builder() {
+class TextBuilder : Builder {
   val builder = StringBuilder()
 
   override fun makeTitle(title: String) {
