@@ -1,0 +1,5 @@
+import factory.*
+
+fun main() {
+  
+}
